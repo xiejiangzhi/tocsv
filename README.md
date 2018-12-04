@@ -36,7 +36,7 @@ $ tocsv mydata.xls:1 > mydata_sheet1.csv
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/tocsv.
+Bug reports and pull requests are welcome on GitHub at https://github.com/xiejiangzhi/tocsv.
 
 ## License
 
