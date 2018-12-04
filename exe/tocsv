@@ -1,0 +1,19 @@
+#! /usr/bin/env ruby
+
+require 'csv'
+require 'roo'
+require 'roo-xls'
+
+path, sheet = ARGV.first.split(':')
+
+unless File.exists?(path)
+  puts "Not found file"
+  puts "Usage: tocsv /path/to/your/file.xlsx > data.csv"
+  exit
+end
+
+xlsx = Roo::Spreadsheet.open(path)
+str = CSV.generate do |csv|
+  xlsx.sheet(sheet.to_i).to_a.each { |row| csv << row }
+end
+puts str
