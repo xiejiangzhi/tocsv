@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tocsv (0.1.0)
+    tocsv (0.1.1)
       roo (~> 2.0)
       roo-xls (~> 1.2.0)
 

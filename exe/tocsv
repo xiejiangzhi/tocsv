@@ -4,9 +4,9 @@ require 'csv'
 require 'roo'
 require 'roo-xls'
 
-path, sheet = ARGV.first.split(':')
+path, sheet = ARGV.first.to_s.split(':')
 
-unless File.exists?(path)
+unless path && path.size > 0 && File.exists?(path)
   puts "Not found file"
   puts "Usage: tocsv /path/to/your/file.xlsx > data.csv"
   exit
