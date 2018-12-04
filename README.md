@@ -10,7 +10,7 @@ A tool to convert spreadsheet to csv format
 * ods: LibreOffice / OpenOffice.org
 * xml: Excel 2002 2003 XML
 
-**More see roo-rb/roo**
+**More see [roo-rb/roo](https://github.com/roo-rb/roo)**
 
 
 ## Installation
